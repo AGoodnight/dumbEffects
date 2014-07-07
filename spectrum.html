@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='css/bootstrap.css' rel ='stylesheet'></link>
+<link href='http://fonts.googleapis.com/css?family=Pacifico|Crimson+Text:400,400italic,600,700,600italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class='container theme-showcase' role='main'>
+		<div class='jumbotron'>
+		<h1>This is Spectrum</h1>
+		<p>
+		<b>An example of the worst tihng you could ever make on the internet.</b>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+		<p>
+		<a class='btn btn-default btn-lg' href='#'>Go to GitHub</a>
+		<p>
+		</div>
+	</div>
+	
+</body>
+<script src= "js/vendor/jquery-1.11.1.min.js"></script>
+<script src= "js/vendor/jquery.color.js"></script>
+<script src= "js/spectrum.js"></script>
+<script>
+$('p').spectrum({range:['#3FB0F4','#F95242','#FE9B0A','#90B30F','#07334E']});
+$('h1').spectrum({range:['#3FB0F4','#F95242','#FE9B0A','#90B30F']});
+$('body').spectrum({range:['#3FB0F4','#F95242','#FE9B0A']});
+$('.jumbotron').spectrum({range:['#3FB0F4','#F95242']});
+$('a').spectrum({range:['#3FB0F4','#F95242']});
+</script>
+</html>
