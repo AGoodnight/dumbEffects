@@ -2854,6 +2854,7 @@ fieldset[disabled] .btn-primary.active {
   color: #fff;
   background-color: #5cb85c;
   border-color: #4cae4c;
+  position:absolute;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -4549,7 +4550,6 @@ a.list-group-item.active > .badge,
   margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
-
 }
 .jumbotron h1,
 .jumbotron .h1 {
