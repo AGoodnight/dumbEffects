@@ -11,8 +11,6 @@
 		this._defaults = defaults;
 		this._name = pluginName;
 		this.init(this.element,this.options);
-		
-		console.log($(element).get(0).tagName);
 	};
 	
 	Plugin.prototype.init = function(ele,opt){
@@ -20,9 +18,10 @@
 		var rangePos = 0;
 		var mainLoop = function(){
 
-			var DOMtype = $(ele).get(0).tagName;
+			var tag = $(ele).get(0).tagName;
 			var clr = '#';
-			var prop;			
+			var prop;	
+			
 			for(var i = 0 ; i<6 ; i++){
 				var num = Math.round(Math.random()*9);	
 				clr+=	num.toString();
@@ -34,9 +33,11 @@
 				clr = opt.range[rangePos]
 			}
 			
-			console.log(DOMtype === 'BODY');
-			
-			if( DOMtype === 'DIV' || DOMtype === 'BODY'){
+			if( tag === 'DIV' || 
+				tag === 'BODY' ||
+				tag === 'SECTION' ||
+				tag === 'FIGURE'
+			){
 				$(ele).animate({'background-color':clr},400, function(){mainLoop();})
 			}else{
 				$(ele).animate({'color':clr},400, function(){mainLoop();})

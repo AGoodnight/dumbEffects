@@ -50,6 +50,11 @@ ul {
 	display:block;
 }
 
+.fancy input[type="button"]{
+	margin:0 auto;
+	display:block;
+}
+
 .fancy .slot:first-child li {
     border-left: none;
 }
@@ -101,10 +106,11 @@ ul {
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script src="js/vendor/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/slotMachine-jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" charset="utf-8">
+	<script src="js/slotMachine-jquery.js" type="text/javascript" charset="utf-8"></script>
+	 <script src="js/centerIt-jquery.js" type="text/javascript" charset="utf-8"></script>    
+	<script type="text/javascript" charset="utf-8">
         
-        
+       $(document).ready(function(){
         // fancy example
         $('.fancy .slot').jSlots({
             number : 3,
@@ -132,6 +138,11 @@ ul {
                 
             }
         });
+		
+		$(".fancy").centerIt();
+		
+		
+		});
         
         
     </script>

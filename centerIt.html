@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+div{
+	border:dashed red 1px;
+	overflow:hidden;
+}
+</style>
+</head>
+<body>
+	
+	<div> I am Centered </div>
+	
+</body>
+<script src= "js/vendor/jquery-1.11.1.min.js"></script>
+<script src= "js/centerIt-jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$('div').centerIt();
+});
+</script>
+</html>
